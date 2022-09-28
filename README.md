@@ -1,6 +1,6 @@
-# Welcome to Css Design Projects
+# Welcome to Css Effects/Designs
 
-This respository is specially for newcomers who wants to enhance their knowledge and skills by making small/large projects.
+This respository is specially for newcomers who wants to enhance their knowledge and skills by making small/large projects.Only Css/SAAS/LASS Projects is accepted
 
 
 ###  How to Start?  
