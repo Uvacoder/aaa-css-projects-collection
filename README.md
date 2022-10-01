@@ -75,6 +75,6 @@ Soon I'll be merging all your changes into the master branch of this project. Yo
 
 Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll encounter often as a contributor!
 
-Thanks to all the people who have contributed:
+## Thanks to all the people who have contributed:
 
 ![Contributors](https://contributors-img.web.app/image?repo=sulagna-dutta-roy/Css-design-projects)
