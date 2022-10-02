@@ -1,3 +1,3 @@
 # Css landing pages here
 
-## 1.) Starbucks Homepage
+## 1.) Starbucks Landing Page
