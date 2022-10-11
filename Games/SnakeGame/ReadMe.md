@@ -1,2 +1,2 @@
 # Snake Game 
-## I have created this usinh HTML, CSS & JavaScript
+## I have created this using HTML, CSS & JavaScript
