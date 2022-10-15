@@ -13,17 +13,6 @@ td{
 }
 
 .winner{
-    /* display: flex; */
-    /* position: absolute; */
-    /* margin-top: -300px; */
-    /* top: auto; */
-    /* bottom: 18%; */
-    /* bottom: 30vh; */
-    /* left: auto; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* right: 20%; */
-    /* width: 100%; */
     text-align: center;
     margin-top: 5px;
     font-size: 30px;
@@ -31,11 +20,4 @@ td{
     transition: ease-in;
     background: rgba(0,0,0,.5);
     color: white;
-    /* border: 2px red solid; */
-    /* height: 250px; */
-    /* width: 300px */
 }
-
-/* #cl{
-    background-color: ;
-} */
