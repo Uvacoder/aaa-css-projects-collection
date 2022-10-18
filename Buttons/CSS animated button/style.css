@@ -14,7 +14,6 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-
 .btn{
     font-family: sans-serif;
     margin:30px;   
@@ -27,9 +26,94 @@ body{
     outline: none;
     position: relative;
     cursor: pointer;
+    width: fit-content;
    letter-spacing: 1px;
     --background-color: #ffffff;
     --border-size: 2px;
+}
+.content-screen{
+    margin-top:30px; 
+    display:flex; 
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+   width:75%; 
+}
+.btn.btn-border-pop::before{
+    content:'';
+    position: absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    z-index:-1; 
+    /* background-color: red; */
+    border: var(--border-size) solid rgb(238, 18, 18); 
+    transition: top, left, right, bottom, 100ms ease-in-out;
+
+}
+
+.btn.btn-border-pop:hover::before,
+.btn.btn-border-pop:focus::before {
+  top: calc(var(--border-size) * -4);
+  left: calc(var(--border-size) * -4);
+  right: calc(var(--border-size) * -4);
+  bottom: calc(var(--border-size) * -4);
+}
+
+
+.btn.btn-background-slide::before{
+    content:''; 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0;
+    z-index:-1; 
+    background-color: rgb(13, 48, 241);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    
+}
+.btn.btn-background-slide:hover::before,.btn.btn-background-slide:focus::before{   
+    transform:scaleX(1);  
+}
+
+.btn.btn-background-slide{
+    z-index:1; 
+    transition:color 300ms ease-in-out; 
+    /* Trick to make the background-color to display behind the text but before the background of the element */
+}
+.btn.btn-background-slide:hover,.btn.btn-background-slide:focus{
+    color:white; 
+}
+
+.btn.btn-background-cover::before{
+    content:''; 
+    position: absolute; 
+    top:0; 
+    right:0;
+    left:0;
+    bottom:0;
+    background-color:white;
+    z-index:-1; 
+    border-radius:50%; 
+    transition:transform 400ms ease-in-out; 
+    transform:scale(1.5)
+}
+
+.btn.btn-background-cover{
+    z-index:1; 
+    background-color:chartreuse; 
+    overflow:hidden; 
+    transition:color 300ms ease-in-out; 
+}
+.btn.btn-background-cover:hover,.btn.btn-background-cover:focus{
+    color:white; 
+}
+.btn.btn-background-cover:hover::before,.btn.btn-background-cover:focus::before{
+    transform:scale(0);
 }
 
 .btn.btn-underline::before{
@@ -51,12 +135,12 @@ body{
 }
 
 
- a span{
+.btn.btn-border-race a span{
   display:block ;
   position: absolute; 
   background: rgb(247, 11, 11);
 }
- a span:nth-child(1){
+.btn.btn-border-race a span:nth-child(1){
     /* left border */
     left:0; 
     top:0;
@@ -69,11 +153,11 @@ body{
     /* transition-delay: 0.5s; */
 
 }
- a:hover span:nth-child(1){
+.btn.btn-border-race a:hover span:nth-child(1){
     transform:scaleY(1); 
     transform-origin:bottom;
 }
- a span:nth-child(2){
+.btn.btn-border-race a span:nth-child(2){
      /* top border */
     top:0;
    left:0;
@@ -84,12 +168,12 @@ body{
     transition: transform 0.5s;
     transition-delay: 0.5s;
 }
- a:hover span:nth-child(2){
+.btn.btn-border-race a:hover span:nth-child(2){
     transform:scaleX(1); 
     transform-origin:left;
 }
 
- a span:nth-child(3){
+.btn.btn-border-race a span:nth-child(3){
     /* bottom  border */
    left:0; 
    bottom:0;
@@ -101,12 +185,12 @@ body{
     /* transition-delay: 0.5s; */
 
 }
- a:hover span:nth-child(3){
+.btn.btn-border-race a:hover span:nth-child(3){
     transform:scaleX(1); 
     transform-origin:left;
 }
 
- a span:nth-child(4){
+.btn.btn-border-race a span:nth-child(4){
     /* right border  */
     right:0; 
     bottom:0;
@@ -117,7 +201,7 @@ body{
     transition: transform 0.5s;
     transition-delay: 0.5s;
 }
- a:hover span:nth-child(4){
+.btn.btn-border-race a:hover span:nth-child(4){
     transform:scaleY(1); 
     transform-origin:bottom;
 }
