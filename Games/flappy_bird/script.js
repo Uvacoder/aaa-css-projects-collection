@@ -76,7 +76,9 @@ function draw() {
                     bY + bird.height >= pipe[i].y + constant)) ||
             bY + bird.height >= cvs.height - fg.height
         ) {
-            location.reload(); // reload the page
+            gameOverApproach();
+            location.pause(); // reload the page
+
         }
 
         if (pipe[i].x == 5) {
@@ -95,4 +97,17 @@ function draw() {
     requestAnimationFrame(draw);
 }
 
-draw();
+window.onload = () => {
+    draw();
+};
+
+function gameOverApproach() {
+    document.getElementById("yourScore").style.display = "block";
+    document.getElementById("score").innerText = score;
+    document.getElementById("gameOver").style.display = "block";
+    document.getElementById("playAgain").innerText = "Play again";
+    document.getElementById("playAgain").style.display = "block";
+}
+function startAgain() {
+    location.reload();
+}
