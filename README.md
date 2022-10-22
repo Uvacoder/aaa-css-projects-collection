@@ -86,4 +86,4 @@ Congrats! You just completed the standard _fork -> clone -> edit -> pull request
 
 ## Thanks to all the people who have contributed:
 
-![Contributors](https://contributors-img.web.app/image?repo=sulagna-dutta-roy/Css-design-projects)
+[![Contributors](https://contrib.rocks/image?repo=WeBeginners-Community/CSS.Effects-Designs)](https://github.com/WeBeginners-Community/CSS.Effects-Designs/graphs/contributors)
